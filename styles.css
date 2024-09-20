@@ -1,0 +1,202 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #1C1A19; /* Set background for the entire page */
+}
+
+/* Header Styling */
+header {
+    background-color: #3E3C3C;
+    padding: 20px 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #F55800;
+}
+
+.nav-links li a i {
+    font-size: 1.2rem;
+}
+
+/* Main Section Styling */
+main {
+    display: flex;
+    padding: 60px 40px;
+    min-height: 80vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C1A19;
+}
+
+/* Content Styling */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content h1 span {
+    color: #F55800;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* Icon List Styling */
+.icon-list {
+    margin-top: 40px;
+}
+
+.icon-list ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.icon-list ul li {
+    font-size: 2rem;
+    color: #F55800; /* Icon color */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-list ul li:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+/* Image Section Styling */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    right: 0;
+    /* Add some spacing between content and image */
+}
+
+.image-section img {
+    /* max-width: 100%; */
+    height: auto;
+    max-height: 500px; /* Limit the maximum height */
+    width: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    main {
+        padding: 60px 20px;
+    }
+
+    .image-section {
+        padding-left: 20px;
+    }
+
+    .image-section img {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .icon-list ul {
+        justify-content: center;
+    }
+
+    .image-section {
+        width: 100%;
+        margin-top: 40px;
+        padding-left: 0;
+    }
+
+    .image-section img {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .icon-list ul {
+        gap: 20px;
+    }
+
+    .icon-list ul li {
+        font-size: 1.5rem;
+    }
+
+    .image-section img {
+        max-height: 250px;
+    }
+}
