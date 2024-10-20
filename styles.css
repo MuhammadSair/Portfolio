@@ -8,7 +8,6 @@
 
 body {
   font-family: Arial, sans-serif;
-
   width: 375px;
 }
 
@@ -34,6 +33,7 @@ header {
   display: flex;
   gap: 20px;
 }
+
 #Introduction {
   background: #1c1a19;
   height: 590px;
@@ -44,12 +44,7 @@ header {
   background-position: bottom right;
   z-index: 9;
 }
-/* .introductory{
-  color: #1c1a19;
-  height: 590px;
-  width: 375px;
-  background-color: black;
-} */
+
 .content {
   z-index: 1;
   flex: 1;
@@ -87,7 +82,6 @@ header {
   font-weight: 700;
   line-height: 32px;
   text-align: left;
-
   color: #fff5e1;
 }
 
@@ -105,6 +99,17 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: left;
+}
+
+.indivi-project-skills li {
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #ffffff3d;
+  color: #fff;
+}
+
+.footer-icon-list li {
+  margin: 0 10px;
 }
 
 .icon-list ul li {
@@ -125,6 +130,7 @@ header {
   position: fixed;
   bottom: 0;
 }
+
 .my-recent-works {
   display: grid;
   grid-template-columns: 1fr;
@@ -132,55 +138,57 @@ header {
   padding-left: 24px;
   padding-right: 24px;
 }
+
 .my-recent-works h1 {
   padding-top: 120px;
   gap: 80px;
-  font-family: Crete Round;
+  font-family: "Crete Round", serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 52px;
   text-align: left;
 }
+
 hr {
-  display: flex;
-  justify-content: center;
   border: 1px solid #212121;
   width: 327px;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto; /* Center the hr element */
 }
+
 .my-recent-works img {
-  display: flex;
-  justify-content: center;
+  display: block; /* Use block display for images */
+  margin: 0 auto; /* Center the img element */
   width: 327px;
   height: 237px;
-  gap: 0px;
-  opacity: 0px;
+  opacity: 1; /* Ensure the opacity is set to 1 */
 }
+
 .multipost-stories {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 24px;
 }
+
 .multipost-stories h2 {
   width: 327px;
   height: 36px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Crete Round;
+  font-family: "Crete Round", serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
   text-align: left;
+  color: #000; /* Ensure the text is visible */
 }
+
 .multipost-stories p {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
 }
+
 .box-row {
   height: 40px;
   width: 314px;
@@ -205,45 +213,45 @@ hr {
   align-items: center; /* Center content vertically */
   justify-content: center;
   border: 1px solid #8993a4;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
 }
+
 #Projects {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
 }
+
 .my-recent-works button {
   width: 124px;
   height: 48px;
-  opacity: 0px;
   background-color: #ff6b00;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
+
 .my-recent-works h3 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .projects {
   padding-left: 24px;
   padding-right: 24px;
 }
+
 .indivi-project {
   position: relative;
   width: 327px;
   height: 386px;
-  gap: 0px;
-  opacity: 0px;
+  gap: 0;
+  opacity: 1; /* Ensure the opacity is set to 1 */
   background-image: url("assets/Mask Group.png");
 }
+
 .indivi-project-skills {
-  /* padding-left: 16px; */
   position: relative;
   padding-top: 72px;
   display: flex;
@@ -252,6 +260,7 @@ hr {
   justify-content: center;
   gap: 12px;
 }
+
 .indivi-project button {
   position: absolute;
   bottom: 0;
@@ -259,17 +268,16 @@ hr {
   height: 48px;
   background-color: #ff6b00;
 }
-.indivi-project-skills h2 {
-  gap: 0px;
-  opacity: 0px;
 
-  font-family: Crete Round;
+.indivi-project-skills h2 {
+  font-family: "Crete Round", serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
   text-align: left;
   color: #fff;
 }
+
 .indivi-project-skills p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -278,12 +286,7 @@ hr {
   text-align: left;
   color: #fff;
 }
-.indivi-project-skills li {
-  font-weight: 500;
-  font-size: 15px;
-  background-color: #ffffff3d;
-  color: #fff;
-}
+
 .about-content {
   height: 563px;
   width: 375px;
@@ -291,6 +294,7 @@ hr {
   background-position: bottom right;
   background-repeat: no-repeat;
 }
+
 .me {
   display: flex;
   justify-content: center;
@@ -300,8 +304,9 @@ hr {
   margin-top: 120px;
   padding-top: 120px;
 }
+
 .me h1 {
-  font-family: Crete Round;
+  font-family: "Crete Round", serif;
   font-size: 72px;
   font-weight: 400;
   line-height: 88px;
@@ -309,11 +314,13 @@ hr {
   text-align: left;
   color: #ff6b00;
 }
+
 .me p {
   padding-left: 12px;
   padding-right: 12px;
   color: #f4f5f7;
 }
+
 .about-content button {
   position: absolute;
   width: 156px;
@@ -322,12 +329,14 @@ hr {
   background-color: #ff6b00;
   margin-left: 12px;
 }
+
 #About {
   background-image: url("assets/Aboutmebg.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   z-index: 9;
 }
+
 #SkillsSection {
   background-color: #1c1a19; /* Same background color as 'About Me' */
   padding: 40px 12px; /* Padding for the section */
@@ -359,10 +368,12 @@ hr {
   align-items: baseline;
   gap: 12px;
 }
+
 .skills-content img {
   width: 20px;
   height: 20px;
 }
+
 .subheadings {
   display: flex;
   flex-direction: column;
@@ -383,6 +394,7 @@ hr {
 .skills {
   margin-bottom: 24px; /* Space between each section */
 }
+
 #ContactSection {
   background-color: #fff; /* Same background as above sections */
   padding: 40px 12px;
@@ -393,7 +405,6 @@ hr {
   color: #172b4d;
   font-family: "InaiMathi", sans-serif;
   margin-bottom: 24px;
-  font-family: Inter;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -452,6 +463,7 @@ button.contact-btn {
 button.contact-btn:hover {
   background-color: #ff6b00;
 }
+
 #FooterSection {
   padding: 20px 0;
   text-align: center; /* Center text in the footer */
@@ -476,13 +488,9 @@ button.contact-btn:hover {
   padding: 0; /* Remove default padding */
 }
 
-.footer-icon-list li {
-  margin: 0 10px; /* Margin between icons */
-}
-
 .footer-icon-list img {
-  width: 18px; /* Adjust icon size as needed */
-  height: 24px;
+  width: 18px;
+  height: 20px;
 }
 
 /* Optional: Add hover effect for icons */
