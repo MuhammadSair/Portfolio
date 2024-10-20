@@ -39,6 +39,10 @@ header {
   height: 590px;
   width: 375px;
   color: #1c1a19;
+  background-image: url("assets/Illustration.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 9;
 }
 /* .introductory{
   color: #1c1a19;
@@ -283,7 +287,9 @@ hr {
 .about-content {
   height: 563px;
   width: 375px;
-  background-color: #1c1a19;
+  background: #1c1a19 url("assets/Aboutmebg.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 .me {
   display: flex;
@@ -315,4 +321,175 @@ hr {
   margin-top: 24px;
   background-color: #ff6b00;
   margin-left: 12px;
+}
+#About {
+  background-image: url("assets/Aboutmebg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 9;
+}
+#SkillsSection {
+  background-color: #1c1a19; /* Same background color as 'About Me' */
+  padding: 40px 12px; /* Padding for the section */
+  text-align: center;
+}
+
+#SkillsSection hr {
+  border: 1px solid #fff;
+  width: 90%;
+  margin: 20px auto; /* Center the hr */
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Gap between headings and subheadings */
+}
+
+.skills-content h2 {
+  color: white;
+  font-family: "InaiMathi", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 12px;
+}
+.skills-content img {
+  width: 20px;
+  height: 20px;
+}
+.subheadings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subheadings h3 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 42.67px;
+  text-align: center;
+  color: #fff5e1 !important;
+  font-family: "InaiMathi", sans-serif;
+}
+
+.language,
+.framework,
+.skills {
+  margin-bottom: 24px; /* Space between each section */
+}
+#ContactSection {
+  background-color: #fff; /* Same background as above sections */
+  padding: 40px 12px;
+  text-align: center;
+}
+
+#ContactSection .contact-content p {
+  color: #172b4d;
+  font-family: "InaiMathi", sans-serif;
+  margin-bottom: 24px;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 400px; /* Adjust as per your design */
+  position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #dbd8d7; /* Only bottom border */
+  background: transparent;
+  padding: 10px 0;
+  font-family: "InaiMathi", sans-serif;
+  color: #172b4d;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #979493;
+}
+
+textarea {
+  height: 120px; /* Increase the height of the textarea */
+  background: #fbf8f7;
+  resize: none; /* Prevent resizing */
+}
+
+button.contact-btn {
+  background-color: #ff6b00; /* Same style as your previous button */
+  color: white;
+  font-family: "InaiMathi", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.contact-btn:hover {
+  background-color: #ff6b00;
+}
+#FooterSection {
+  padding: 20px 0;
+  text-align: center; /* Center text in the footer */
+}
+
+#FooterSection hr {
+  border: 1px solid #dfe1e6; /* White hr line */
+  width: 100%; /* Full width */
+  margin: 20px auto; /* Space around hr */
+}
+
+.footer-icon-list {
+  margin: 30px 0; /* Margin for spacing */
+  display: flex;
+  justify-content: center; /* Center the icon list */
+}
+
+.footer-icon-list ul {
+  display: flex;
+  justify-content: center; /* Center the icons in the ul */
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.footer-icon-list li {
+  margin: 0 10px; /* Margin between icons */
+}
+
+.footer-icon-list img {
+  width: 18px; /* Adjust icon size as needed */
+  height: 24px;
+}
+
+/* Optional: Add hover effect for icons */
+.footer-icon-list img:hover {
+  opacity: 0.8; /* Slightly dim the icon on hover */
+}
+
+.shape-placeholder {
+  margin-top: 20px; /* Space above the shape */
 }
