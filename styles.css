@@ -746,7 +746,47 @@ button h3 {
   filter: invert(34%) sepia(34%) saturate(377%) hue-rotate(178deg)
     brightness(98%) contrast(90%);
 }
+/* -------------------MobileMenu___________________ */
+/* Add this to your styles.css */
+/* Add this to your styles.css */
+.header-menu-links {
+  display: none; /* Hide the menu by default */
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3c3a39; /* Background color for the mobile menu */
+  z-index: 1000;
+  justify-content: top;
+  align-items: left;
+}
 
+.header-menu-links.show {
+  display: flex; /* Show the menu when the 'show' class is added */
+}
+
+.header-menu-button {
+  cursor: pointer;
+}
+
+.close {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  top: 0;
+  left: 0;
+}
+
+.header-menu-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 10px 0;
+}
 @media only screen and (min-width: 768px) {
   #header {
     background-color: #3e3c3c;

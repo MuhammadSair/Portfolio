@@ -17,21 +17,14 @@
     <header id="header">
       <nav class="wrapper header-menu">
         <a class="header-menu-logo" href="index.html">Mahammad Sair</a>
-        <button type="button" class="header-menu-button">
+        <button type="button" class="header-menu-button" id="hamburger-button">
           <img src="assets/svg/menu.svg" alt="menu" />
         </button>
-        <ul class="header-menu-links">
-          <li class="header-menu-links-first">
-            <button class="close" type="button"></button>
-          </li>
-          <li><a href="#works">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="header-menu-links-last">
-            <a href="mailto:test@mail.com"
-              ><img src="assets/svg/mail.svg" alt="mail"
-            /></a>
-          </li>
+        <ul class="header-menu-links" id="mobile-menu">
+          <button class="close" type="button" id="close-button">X</button>
+          <li><a href="#works" class="menu-option">Portfolio</a></li>
+          <li><a href="#about" class="menu-option">About</a></li>
+          <li><a href="#contact" class="menu-option">Contact</a></li>
         </ul>
       </nav>
     </header>
