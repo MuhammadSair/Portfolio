@@ -747,8 +747,6 @@ button h3 {
     brightness(98%) contrast(90%);
 }
 /* -------------------MobileMenu___________________ */
-/* Add this to your styles.css */
-/* Add this to your styles.css */
 .header-menu-links {
   display: none; /* Hide the menu by default */
   flex-direction: column;
@@ -758,9 +756,10 @@ button h3 {
   width: 100%;
   height: 100%;
   background-color: #3c3a39; /* Background color for the mobile menu */
-  z-index: 1000;
-  justify-content: top;
+  z-index: 10;
+  justify-content: flex-start;
   align-items: left;
+  padding-top: 92px;
 }
 
 .header-menu-links.show {
@@ -772,13 +771,15 @@ button h3 {
 }
 
 .close {
+  position: absolute;
   cursor: pointer;
   background: none;
   border: none;
   color: white;
   font-size: 24px;
   top: 0;
-  left: 0;
+  right: 50px;
+  z-index: 10000;
 }
 
 .header-menu-links a {
