@@ -217,8 +217,8 @@ a {
 
 .hero {
   padding: 168px 0;
-  background: var(--backgrounds-color) url(../img/hero.png) calc(100% + 120px)
-    calc(100% - 5px) / 200px 300px no-repeat;
+  background: var(--backgrounds-color) url(assets/img/hero.png)
+    calc(100% + 120px) calc(100% - 5px) / 200px 300px no-repeat;
 }
 
 .hero .wrapper {
@@ -254,7 +254,6 @@ a {
   padding-left: 24px;
   padding-right: 24px;
 }
-
 .my-recent-works h1 {
   padding-top: 120px;
   gap: 80px;
@@ -627,7 +626,7 @@ button h3 {
 
 .about-banner {
   padding: 120px 0 209px;
-  background: transparent url(../img/about.png) calc(100% + 250px)
+  background: transparent url(assets/img/about.png) calc(100% + 250px)
     calc(100% - 5px) / 400px 250px no-repeat;
 }
 
@@ -1050,7 +1049,9 @@ button h3 {
     transform: scale(0.95);
   }
 }
+
 /* Styles for desktop */
+
 @media (min-width: 768px) {
   .multipost-stories {
     display: flex;
@@ -1071,6 +1072,7 @@ button h3 {
     padding-left: 24px; /* Add some padding for spacing */
   }
 }
+
 @media (min-width: 768px) {
   #Projects {
     padding-top: 3rem;
@@ -1097,6 +1099,40 @@ button h3 {
     width: 369px;
     height: 435px;
     left: 393px;
+    gap: 0;
+    opacity: 0;
+  }
+
+  .indivi-project button {
+    width: 100%; /* Ensure the button takes full width of the project */
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #Projects {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    padding-left: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+    gap: 24px;
+  }
+
+  .projects {
+    display: contents; /* Allow the grid layout to apply to the children */
+  }
+
+  .indivi-project {
+    width: 100%; /* Ensure the project takes full width of the grid cell */
+    height: auto;
+    background-image: url("asset/Card Works.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .indivi-project img {
+    width: 100%;
+    height: auto;
+    left: 0;
     gap: 0;
     opacity: 0;
   }
