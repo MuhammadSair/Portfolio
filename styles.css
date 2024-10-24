@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 @font-face {
   font-family: roboto-bold;
   src: url(../font/roboto-bold.ttf);
@@ -747,6 +749,7 @@ button h3 {
     brightness(98%) contrast(90%);
 }
 /* -------------------MobileMenu___________________ */
+
 .header-menu-links {
   display: none; /* Hide the menu by default */
   flex-direction: column;
@@ -758,7 +761,7 @@ button h3 {
   background-color: #3c3a39; /* Background color for the mobile menu */
   z-index: 10;
   justify-content: flex-start;
-  align-items: left;
+  align-items: right;
   padding-top: 92px;
 }
 
@@ -781,12 +784,23 @@ button h3 {
   right: 50px;
   z-index: 10000;
 }
+/* Ensure you have imported the Inter font in your HTML or CSS */
 
 .header-menu-links a {
-  color: white;
+  color: #fff5e1;
   text-decoration: none;
   font-size: 24px;
-  margin: 10px 0;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .header-menu-links {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  .close {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   #header {
