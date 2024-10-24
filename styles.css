@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 @font-face {
   font-family: roboto-bold;
   src: url(../font/roboto-bold.ttf);
@@ -247,6 +249,7 @@ a {
   filter: invert(54%) sepia(96%) saturate(0%) hue-rotate(156deg)
     brightness(127%) contrast(105%);
 }
+
 .my-recent-works {
   display: grid;
   grid-template-columns: 1fr;
@@ -254,6 +257,7 @@ a {
   padding-left: 24px;
   padding-right: 24px;
 }
+
 .my-recent-works h1 {
   padding-top: 120px;
   gap: 80px;
@@ -746,7 +750,60 @@ button h3 {
   filter: invert(34%) sepia(34%) saturate(377%) hue-rotate(178deg)
     brightness(98%) contrast(90%);
 }
+/* -------------------MobileMenu___________________ */
 
+.header-menu-links {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3c3a39;
+  z-index: 10;
+  justify-content: flex-start;
+  align-items: right;
+  padding-top: 92px;
+}
+
+.header-menu-links.show {
+  display: flex;
+}
+
+.header-menu-button {
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  top: 0;
+  right: 50px;
+  z-index: 10000;
+}
+
+.header-menu-links a {
+  color: #fff5e1;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .header-menu-links {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  .close {
+    display: none;
+  }
+}
 @media only screen and (min-width: 768px) {
   #header {
     background-color: #3e3c3c;

@@ -13,36 +13,25 @@
   </head>
 
   <body>
-    <!-- Header Start -->
     <header id="header">
       <nav class="wrapper header-menu">
         <a class="header-menu-logo" href="index.html">Mahammad Sair</a>
-        <button type="button" class="header-menu-button">
+        <button type="button" class="header-menu-button" id="hamburger-button">
           <img src="assets/svg/menu.svg" alt="menu" />
         </button>
-        <ul class="header-menu-links">
-          <li class="header-menu-links-first">
-            <button class="close" type="button"></button>
-          </li>
-          <li><a href="#works">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="header-menu-links-last">
-            <a href="mailto:test@mail.com"
-              ><img src="assets/svg/mail.svg" alt="mail"
-            /></a>
-          </li>
+        <ul class="header-menu-links" id="mobile-menu">
+          <button class="close" type="button" id="close-button">X</button>
+          <li><a href="#works" class="menu-option">Portfolio</a></li>
+          <li><a href="#about" class="menu-option">About</a></li>
+          <li><a href="#contact" class="menu-option">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <!-- Header End -->
 
-    <!-- Content Start -->
     <main>
-      <!-- Hero Start -->
       <section class="hero">
         <div class="wrapper">
-          <h1>Hey There.<br />I’m Mahammad Sair.</h1>
+          <h1>Hey There.<br />I’m Sair.</h1>
           <h2>I'm a Software Developer</h2>
           <p>
             I can help you build a product, feature or website Look through some
@@ -72,9 +61,7 @@
           </ul>
         </div>
       </section>
-      <!-- Hero End -->
 
-      <!-- Works Start -->
       <section id="recent-works">
         <div class="my-recent-works">
           <h1>My Recent Works</h1>
@@ -100,7 +87,6 @@
           </div>
         </div>
       </section>
-
       <section id="Projects">
         <div class="projects">
           <div class="indivi-project">
@@ -211,7 +197,7 @@
           </div>
         </div>
       </section>
-      <!-- About Start -->
+
       <section id="about" class="about">
         <header class="about-banner">
           <div class="wrapper">
@@ -261,20 +247,14 @@
           </ul>
         </footer>
       </section>
-      <!-- About End -->
 
-      <!-- Contact Start -->
       <section id="contact" class="wrapper">
         <div class="contact">
           <p>
             I'm always interested in hearing about new projects, so if you'd
             like to chat please get in touch.
           </p>
-          <form
-            action="https://formspree.io/f/xqkovylg"
-            method="post"
-            novalidate
-          >
+          <form novalidate>
             <label>
               <input
                 type="text"
@@ -309,11 +289,8 @@
           </form>
         </div>
       </section>
-      <!-- Contact End -->
     </main>
-    <!-- Content End -->
 
-    <!-- Footer Start -->
     <footer id="footer">
       <div class="wrapper">
         <ul class="socials footer-socials">
@@ -337,6 +314,5 @@
         </ul>
       </div>
     </footer>
-    <!-- Footer End -->
   </body>
 </html>
